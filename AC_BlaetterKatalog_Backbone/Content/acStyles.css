@@ -1,0 +1,35 @@
+/* line 5, _sass/acStyles.scss */
+[data-role=header] {
+  /*line-height: $heightHeadFoot;*/
+}
+
+/* line 9, _sass/acStyles.scss */
+[data-role=header], [data-role=footer] {
+  /*text-align: center;
+  height: $heightHeadFoot;*/
+  width: 320px;
+}
+
+/* line 15, _sass/acStyles.scss */
+.splashContent {
+  /*background-image: url("/Content/images/gecko.jpg");*/
+  background: url("/Content/images/gecko.jpg") center no-repeat;
+  /*background-size: 100%;*/
+  /*background-repeat: no-repeat;
+  background-size: contain;*/
+  height: 370px;
+  width: 320px;
+  background-color: greenyellow;
+  display: inline-block;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 30, _sass/acStyles.scss */
+[data-role=content] {
+  background-color: greenyellow;
+  height: 370px;
+  width: 320px;
+  padding-left: 0px;
+  padding-right: 0px;
+}

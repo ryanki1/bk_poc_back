@@ -1,0 +1,5 @@
+c:\users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\AC_BlaetterKatalog_Backbone\bin\AC_BlaetterKatalog_Backbone.dll
+c:\users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\AC_BlaetterKatalog_Backbone\bin\AC_BlaetterKatalog_Backbone.pdb
+c:\users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\AC_BlaetterKatalog_Backbone\obj\Debug\AC_BlaetterKatalog_Backbone.dll
+c:\users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\AC_BlaetterKatalog_Backbone\obj\Debug\AC_BlaetterKatalog_Backbone.pdb
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\AC_BlaetterKatalog_Backbone\obj\Debug\AC_BlaetterKatalog_Backbone.csprojResolveAssemblyReference.cache

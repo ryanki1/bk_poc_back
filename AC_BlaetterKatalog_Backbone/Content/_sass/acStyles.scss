@@ -1,0 +1,39 @@
+﻿$widthDevice: 320px;
+$heightDevice: 480px;
+$heightHeadFoot: 55px;
+
+[data-role=header] {
+	/*line-height: $heightHeadFoot;*/
+}
+
+[data-role=header], [data-role=footer] {
+	/*text-align: center;
+	height: $heightHeadFoot;*/
+	width: $widthDevice;
+}
+
+.splashContent {
+
+    /*background-image: url("/Content/images/gecko.jpg");*/
+    background: url('/Content/images/gecko.jpg') center no-repeat;
+    /*background-size: 100%;*/
+    /*background-repeat: no-repeat;
+    background-size: contain;*/
+    height: $heightDevice - (2 * $heightHeadFoot);
+	width: $widthDevice;
+    background-color: greenyellow;
+    display: inline-block;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+[data-role=content] {
+	background-color: greenyellow;
+	height: $heightDevice - (2 * $heightHeadFoot);
+	width: $widthDevice;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+body {
+}

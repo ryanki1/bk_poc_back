@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <!--<link rel="stylesheet" href="Content/jquery.mobile-1.1.0.min.css" />-->
+    <link rel="stylesheet" href="Content/jquery.mobile.structure-1.1.0.min.css" />
+    <link rel="stylesheet" href="Content/jquery.mobile.theme-1.1.0.min.css" />   
+    <link rel="stylesheet" href="Content/jasmine.css" />
+    <link rel="stylesheet" href="Content/acStyles.css"   />      
+    <script type="text/javascript" data-main="Scripts/main" src="Scripts/require.js"></script>
+    <script type="text/javascript" src="Scripts/jasmine.js"></script>
+    <script type="text/javascript" src="Scripts/jasmine-html.js"></script>
+    <!--<link rel="stylesheet" href="Content/Site.css" />-->
+    <!--<script type="text/javascript" src="Scripts/jquery-1.7.2.js"></script>-->
+    <!--<script type="text/javascript" src="Scripts/jquery-ui-1.8.20.js"></script>-->
+    <!--<script type="text/javascript" src="Scripts/jquery.mobile-1.1.0.js"></script>-->
+    <!--<script type="text/javascript" src="Scripts/jquery.validate.js"></script>-->
+    <!--<script type="text/javascript" src="Scripts/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="Scripts/backbone-min.js"></script>
+    <script type="text/javascript" src="Scripts/underscore-min.js"></script>-->         
+    
+</head>
+<body>
+    <div id="splashPage" data-role="page">
+        <div data-role="header">
+            <!--<span style="padding: 20px;">Header</span>-->
+            <h1>Header</h1>
+        </div>
+        <div data-role="content" class="splashContent">            
+            Here is some content
+        </div>
+        <div data-role="footer" data-id="FixedFooter" data-position="fixed">
+            <h1>
+                <!-- This section needs to repeat for every footer - coffeescript  backbone view? -->
+                <div data-role="navbar">
+                    <span>
+                        <a href="getEvent.json" data-iconpos="top" data-icon="grid" data-transition="slide">Events</a>
+                    </span>
+                    <span>
+                        <a href="#albumCollection" data-iconpos="top" data-icon="gear" data-transition="slide">Albums</a>
+                    </span>
+                </div>
+            </h1>
+        </div>
+
+    </div>
+    <div id="eventCollection" data-role="page">
+        <div data-role="header">
+            <h1>header</h1>
+            <div data-role="navbar" class="ui-navbar ui-mini">
+                <ul>
+                    <li><a href="#" >Create</a></li>
+                    <li><a href="#" >Remove</a></li>
+                    <li><a href="#" >Update</a></li>
+                    <li><a href="#" >Display</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul id="eventItem">
+
+            </ul>
+        </div>
+        <div data-role="footer" data-id="FixedFooter" data-position="fixed">
+            <h1>footer</h1>
+        </div>
+
+    </div>
+    <div id="albumCollection" data-role="page">
+        <div data-role="header">
+            header
+        </div>
+        <div data-role="content" style="width:320px;">
+            <ul id="albumList" data-role="listview" data-inset="true">
+            </ul>
+        </div>
+        <div data-role="footer" data-id="FixedFooter" data-position="fixed">
+            footer
+        </div>
+
+    </div>
+    <script type="text/template" id="templateAlbumItem">
+        <li data-icon="arrow-r" data-role="list-divider">
+            <a href="#albumPicturePage" data-transition="slide" >
+                <strong><span class="ui-li-heading"><%= name %></span></strong>
+            </a>
+        </li>
+    </script>
+    <script type="text/template" id="templateEventItem">
+        <li data-icon="arrow-r" data-role="list-divider">
+            <a href="#" data-transition="slide" >
+                <strong><span class="ui-li-heading"><%= name %></span></strong>
+            </a>
+        </li>
+    </script>
+   <!-- <div id="albumPicturePage" data-role="page">
+        <div data-role="header">
+            header
+        </div>
+        <div data-role="content" style="width:320px;">
+            <ul data-bind="foreach: albumPicture" data-role="listview" data-inset="true">
+                <li data-icon="arrow-r" data-role="list-divider">
+                    <a href="#picturePage" data-transition="slide" style="margin-bottom: 10px; margin-top: 10px; margin-left: 10px;" >
+                        <img src="c:\dud.jpg" data-bind="attr: {src: picture}" /><span class="ui-li-heading" data-bind="text: name"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            footer
+        </div>
+    </div>-->
+<!--    <div id="picturePage" data-role="page">
+        <div data-role="header">
+            header
+        </div>
+        <div data-role="content" style="width:320px;">            
+            <img src="c:\dud.jpg" data-bind="attr: {src: picture}" />
+            <span class="ui-li-heading" data-bind="text: name"></span>
+        </div>
+        <div data-role="footer">
+            footer
+        </div>
+    </div>-->
+    <script>
+    </script>
+
+</body>
+</html>

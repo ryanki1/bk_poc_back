@@ -1,0 +1,7 @@
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\bin\Debug\Service.dll
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\bin\Debug\Service.pdb
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\bin\Debug\Contract.dll
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\bin\Debug\Contract.pdb
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\obj\Debug\Service.dll
+C:\Users\ryanki1\documents\visual studio 2012\Projects\AC_BlaetterKatalog_Backbone\Service\obj\Debug\Service.pdb
