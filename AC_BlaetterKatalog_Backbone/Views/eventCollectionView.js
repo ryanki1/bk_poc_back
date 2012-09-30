@@ -19,7 +19,7 @@
         renderEventItem: function (eventItem) {
             console.log("Event item " + eventItem.name + " rendering");
             var eventItemView = new EventItemView({ model: eventItem, tagName: 'li', attributes: { "class": "ui-corner-top ui-corner-bottom ui-btn-up-c" } });
-            this.$el.append(eventItemView.renderEventItem().el);
+            this.$el.append(eventItemView.render().el);
         }
     });
     //var eventCollectionView = new EventCollectionView();

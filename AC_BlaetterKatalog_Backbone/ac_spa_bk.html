@@ -35,7 +35,7 @@
                 <!-- This section needs to repeat for every footer - coffeescript  backbone view? -->
                 <div data-role="navbar">
                     <span>
-                        <a href="getEvent.json" data-iconpos="top" data-icon="grid" data-transition="slide">Events</a>
+                        <a id="eventButton" href="#eventCollection" data-iconpos="top" data-icon="grid" data-transition="slide">Events</a>
                     </span>
                     <span>
                         <a href="#albumCollection" data-iconpos="top" data-icon="gear" data-transition="slide">Albums</a>
@@ -87,12 +87,11 @@
             </a>
         </li>
     </script>
+   <!-- <li data-icon="arrow-r" data-role="list-divider">-->
     <script type="text/template" id="templateEventItem">
-        <li data-icon="arrow-r" data-role="list-divider">
-            <a href="#" data-transition="slide" >
-                <strong><span class="ui-li-heading"><%= name %></span></strong>
-            </a>
-        </li>
+        <a href="#" data-transition="slide" >
+            <strong><span class="ui-li-heading"><%= name %></span></strong>
+        </a>
     </script>
    <!-- <div id="albumPicturePage" data-role="page">
         <div data-role="header">

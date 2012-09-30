@@ -1,11 +1,7 @@
-﻿define(["backbone", "underscore"], function (Backbone, _) {
-    //Prepare Model for collection
-    //var eventModel = new EventModel();
-    //eventModel.initialize();
-    //Prime collection
+﻿define(["backbone", "eventmodel"], function (Backbone, EventModel) {
+    debugger;
     var EventModelCollection = Backbone.Collection.extend({
-        //model: eventModel.getEvent()
+        model: EventModel
     });
-    //eventModelCollection = new EventModelCollection();
     return EventModelCollection;
-})
+});

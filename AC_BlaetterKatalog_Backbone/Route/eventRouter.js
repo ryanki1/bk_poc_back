@@ -1,26 +1,25 @@
-﻿//define(["jquery", "backbone", "eventmodel", "eventcollection", "eventcollectionview"], function ($, Backbone, EventModel, EventCollection, EventCollectionView) {
-define(["jquery", "backbone"], function ($, Backbone) {
+﻿define(["jquery", "backbone", "eventmodel", "eventmodelcollection", "eventcollectionview"], function ($, Backbone, EventModel, EventModelCollection, EventCollectionView) {
     var EventRouter = Backbone.Router.extend({
+        initialize: function () {
+            $.ajaxSetup({
+                accepts: "application/json"
+            });   
+            Backbone.history.start({ silent: true, pushState: true });
+        },
         routes: {
-            "getEvent.json": "getEvent",
-            "getEvent.json/:eventId": "getEvent"
+            "ShowEventPage": "getEvent",
+            "ShowEventPage/:eventId": "getEvent"
         },
         getEvent: function (eventId) {
             // Sample usage: #getEvent.json/1 
-            var event = { "data": [{ "name": "Vegetable of the week"}, {"name": "Gardening Question Time in Fribourg"}, {"name": "Compost and soil - what options are available?" }]};
-            //for (var i = 0; i < event.data.length; i++) {
-            //    EventModel.Event.push(event.data[i]);
-            //}
+            debugger;
+            var eventList = { data: [{ name: "Vegetable of the week" }, { name: "Gardening Question Time in Fribourg" }, { name: "Compost and soil - what options are available?" }] };
             // Render the events page
-            //var eventCollection = new EventCollection({
-            //                                            model: event
-            //                                        });
-            //var eventCollectionView = new EventCollectionView({
-            //                                                    collection: eventCollection 
-            //                                                });
-            //eventCollectionView.renderEventCollection();
+            var eventCollection = new EventModelCollection(eventList.data);
+            var eventCollectionView = new EventCollectionView({collection: eventCollection});
+            eventCollectionView.renderEventCollection();
 
-            //return event;
+            return event;
 
             //var getEventUrl;
             //if (eventId) {
@@ -52,15 +51,8 @@ define(["jquery", "backbone"], function ($, Backbone) {
             return event;
         }
     });
-    //var initialize = function () {
-    //    var eventRouter = new EventRouter();
-    //    Backbone.history.start();
-    //}
-    
-    //return {
-    //    initialize: initialize
-    //}
-    var eventRouter = new EventRouter();
-    Backbone.history.start({silent:true,pushState:true});
-    return eventRouter;
+    //var eventRouter = new EventRouter();
+    //Backbone.history.start({silent:true,pushState:true});
+    //return eventRouter;
+    return EventRouter;
 });

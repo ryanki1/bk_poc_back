@@ -13,7 +13,8 @@ require.config({
             exports: 'Backbone'
         }},
     paths: {
-        app:    "app",
+        app: "app",
+        wiring: "wiring",
         jquery: "jquery-1.7.2",
         jmobile: "jquery.mobile-1.1.1",
         backbone: "backbone",
@@ -23,7 +24,7 @@ require.config({
         router: "../Route/BKRouter",
         eventrouter: "../Route/eventRouter",
         albumscollection: "../Collection/albumsModelCollection",
-        eventcollection: "../Collection/eventModelCollection",
+        eventmodelcollection: "../Collection/eventModelCollection",
         albumcollectionview: "../Views/albumCollectionView",
         eventcollectionview: "../Views/eventCollectionView",
         albumitemview: "../Views/albumItemView",
@@ -32,28 +33,17 @@ require.config({
     waitSeconds: 15
 });
 
-require(["app","jquery", "backbone","jmobile","domReady!"],
-    function (App,$,Backbone, EventRouter) {
+//require(["app","jquery", "backbone","jmobile","domReady!"],
+require(["app", "jmobile", "domReady!"],
+    function (App) {
         console.log("main's turn");
         // Start monitoring all hashchange events
         App.initialize();
         //debugger; When this statement active $("#albumList li a") present, otherwise not.
-        $("#albumList li a").click(function () {
-            //debugger;
-            // Get child index of list element clicked
-            //ancestorLi = this.parentElement.parentElement.parentElement; // Before css limited to struc and theme
-            ancestorLi = this.parentElement;
-            var albumIndex = $.inArray(ancestorLi, $("#albumList li"));
-            console.log("Album " + albumIndex + " clicked :-)");
-            AlbumsModel.getAlbumPicture(AlbumsModel.album()[albumIndex]);
-        });
-        $(document).bind("pageshow", function (x, prevPage) { // Router controls which views to render
-            debugger;
-            //if ($(prevPage).attr("id") == "albumPage") console.log("albumPicture page showed");
-            //if ($(x.target).attr("id") == "eventCollection") {
-            //    // Events Page
-            //    var eventCollectionView = new EventCollectionView();
-
-            //}
-        });
+        //$("#albumList li a").click(function () {
+        //    ancestorLi = this.parentElement;
+        //    var albumIndex = $.inArray(ancestorLi, $("#albumList li"));
+        //    console.log("Album " + albumIndex + " clicked :-)");
+        //    AlbumsModel.getAlbumPicture(AlbumsModel.album()[albumIndex]);
+        //});
     });

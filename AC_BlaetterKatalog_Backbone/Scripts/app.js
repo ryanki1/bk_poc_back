@@ -1,10 +1,10 @@
-﻿define(['jquery','underscore','backbone','eventrouter'], function ($, _, Backbone, EventRouter) {
-    var initialize = function () {
-        // Pass in our Router module and call it's initialize function
-        EventRouter.initialize();
+﻿define(['jquery','underscore','backbone','eventrouter','wiring'], function ($, _, Backbone, EventRouter,Wiring) {
+    var App = {
+        initialize: function () {
+            Wiring.primed();
+            App.wiring = Wiring;
+        }
+        //wiring: null
     }
-
-    return {
-        initialize: initialize
-    };
+    return App;
 });
